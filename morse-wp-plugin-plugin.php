@@ -6,3 +6,5 @@
  * Author: Samson Zhang
  * Author URI: https://www.samsonzhang.com/
  */
+
+add_filter('use_block_editor_for_post', '__return_false', 10);
