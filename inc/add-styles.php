@@ -9,16 +9,32 @@ function morse_wp_plugin_add_styles(){ ?>
         color: <?php echo get_theme_mod("morse-wp-color-primary")?>;
     }
     
-    .morse-bg-secondary{
+    .morse-bg-accent{
         background-color: <?php echo get_theme_mod("morse-wp-color-secondary")?>;
     }
 
-    .morse-color-secondary{
+    .morse-color-accent{
         color: <?php echo get_theme_mod("morse-wp-color-secondary")?>;
     }
 
     a{
         color: <?php echo get_theme_mod("morse-wp-color-link", "blue")?>;
+    }
+
+    .morse-font-body{
+        font-family: "Cabin";
+    }
+
+    .morse-font-heading{
+        font-family: "Roboto Slab";
+    }
+
+    .morse-font-accent{
+        font-family: "Poppins";
+    }
+
+    .morse-none{
+        display: none;
     }
 </style>
 <?php
