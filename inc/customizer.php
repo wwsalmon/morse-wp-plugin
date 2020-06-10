@@ -21,13 +21,6 @@ function morse_wp_plugin_customizer($wp_customize)
             )
         )
     );
-    $wp_customize->add_setting('morse-wp-template-text');
-    $wp_customize->add_control('morse-wp-template-text-control', array(
-        'label' => 'text field',
-        'type' => 'string',
-        'section' => 'morse-wp-custom-section',
-        'settings' => 'morse-wp-template-home-text'
-    ));
     $wp_customize->add_setting('morse-wp-color-primary');
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'morse-wp-color-primary-control', array(
             'label'      => "Primary Color",
@@ -49,6 +42,27 @@ function morse_wp_plugin_customizer($wp_customize)
             'settings'   => 'morse-wp-color-link',
         ))
     );
+	$wp_customize->add_setting('morse-wp-font-body');
+	$wp_customize->add_control('morse-wp-font-body-control', array(
+		'label' => 'Google Font for Body',
+		'type' => 'string',
+		'section' => 'morse-wp-custom-section',
+		'settings' => 'morse-wp-font-body'
+	));
+	$wp_customize->add_setting('morse-wp-font-heading');
+	$wp_customize->add_control('morse-wp-font-heading-control', array(
+		'label' => 'Google Font for Headings',
+		'type' => 'string',
+		'section' => 'morse-wp-custom-section',
+		'settings' => 'morse-wp-font-heading'
+	));
+	$wp_customize->add_setting('morse-wp-font-accent');
+	$wp_customize->add_control('morse-wp-font-accent-control', array(
+		'label' => 'Google Font for Accents',
+		'type' => 'string',
+		'section' => 'morse-wp-custom-section',
+		'settings' => 'morse-wp-font-accent'
+	));
     $wp_customize->add_section('morse-wp-navbar-section', array(
         'title' => "Morse WP Theme Navbar Settings"
     ));

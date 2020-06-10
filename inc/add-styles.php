@@ -28,15 +28,15 @@ function morse_wp_plugin_add_styles(){ ?>
     }
 
     .morse-font-body{
-        font-family: "Cabin";
+        font-family: <?php echo get_theme_mod("morse-wp-font-body", "Georgia"); ?>
     }
 
     .morse-font-heading{
-        font-family: "Roboto Slab";
+        font-family: <?php echo get_theme_mod("morse-wp-font-heading", "Georgia"); ?>
     }
 
     .morse-font-accent{
-        font-family: "Poppins";
+        font-family: <?php echo get_theme_mod("morse-wp-font-accent", "sans-serif"); ?>
     }
 
     .morse-none{
