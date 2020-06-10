@@ -42,6 +42,13 @@ function morse_wp_plugin_customizer($wp_customize)
             'settings'   => 'morse-wp-color-secondary',
         ))
     );
+    $wp_customize->add_setting('morse-wp-color-link');
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'morse-wp-color-link-control', array(
+            'label'      => "Link Color",
+            'section'    => 'morse-wp-custom-section',
+            'settings'   => 'morse-wp-color-link',
+        ))
+    );
     $wp_customize->add_section('morse-wp-navbar-section', array(
         'title' => "Morse WP Theme Navbar Settings"
     ));
