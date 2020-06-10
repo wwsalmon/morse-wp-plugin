@@ -3,15 +3,21 @@ function morse_wp_plugin_add_styles(){ ?>
 <style>
     .morse-bg-primary{
         background-color: <?php echo get_theme_mod("morse-wp-color-primary")?>;
+        color: #fff;
     }
 
     .morse-color-primary{
         color: <?php echo get_theme_mod("morse-wp-color-primary")?>;
     }
+
+    .morse-bg-primary a{
+        color: #fff;
+    }
     
     .morse-bg-accent{
         background-color: <?php echo get_theme_mod("morse-wp-color-secondary")?>;
     }
+
 
     .morse-color-accent{
         color: <?php echo get_theme_mod("morse-wp-color-secondary")?>;
