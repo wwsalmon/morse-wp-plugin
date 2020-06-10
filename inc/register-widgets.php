@@ -3,7 +3,7 @@ function morse_wp_widgets_init() {
 	register_sidebar(array(
 		'name'          => 'Home right sidebar',
 		'id'            => 'home_right',
-		'before_widget' => '<div>',
+		'before_widget' => '<div class="border-bottom">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<div class="uppercase-link morse-font-accent"><span>',
 		'after_title'   => '</span></div>',
